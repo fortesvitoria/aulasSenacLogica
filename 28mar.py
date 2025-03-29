@@ -22,5 +22,5 @@ preco = float(input('Digite o preco do produto: '))
 qtd = int(input('Digite a qtd de mercadorias: '))
 print ('Produto     QTD     PRECO    TOTAL')
 print (f'{produto} {qtd}  {(qtd * preco)}')
-#print (f'{produto, qtd, qtd * preco}')
+print (f'{produto, qtd, qtd * preco}')
 
