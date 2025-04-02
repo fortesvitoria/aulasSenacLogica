@@ -3,6 +3,7 @@ print('1. Ler dois números e imprimir as variáveis na mesma ordem que foram di
 numeroUm = int(input('Digite um numero: '))
 numeroDois = int(input('Digite outro npumero: '))
 print (f'{numeroUm} e {numeroDois}')
+print('----------------------------------------------')
 print('2. Escreva um algoritmo que leia dois números que deverão ser colocados, respectivamente nas variáveis vA e vB. ')
 vA = int(input('Digite um numero: '))
 vB = int(input('Digite um numero: '))
@@ -13,6 +14,80 @@ vX = vA
 vA = vB
 vB = vX
 print(f'{vA} e {vB}')
-# 3. Ler dois valores numéricos e escrever a soma destes.
-# 4. Ler três valores numéricos e escrever a média aritmética.
-# 5. Ler um conjunto de 5 dados numéricos e imprimir sua soma e sua média.
+print('----------------------------------------------')
+print('3. Ler dois valores numéricos e escrever a soma destes.')
+valor01 = int(input('Digite um valor '))
+valor02 = int(input('Digite outro valor '))
+print(f'A soma dos valores é de {valor01+valor02}')
+print('----------------------------------------------')
+print('4. Ler três valores numéricos e escrever a média aritmética.')
+val01 = int(input('Digite um valor '))
+val02 = int(input('Digite outro valor '))
+val03 = int(input('Digite outro valor '))
+somaValor = val01+val02+val03
+print(f'A  média aritmética dos valores é de {somaValor/3}')
+print('----------------------------------------------')
+print('5. Ler um conjunto de 5 dados numéricos e imprimir sua soma e sua média.')
+va01 = int(input('Digite um valor'))
+va02 = int(input('Digite outro valor '))
+va03 = int(input('Digite outro valor '))
+va04 = int(input('Digite outro valor '))
+va05 = int(input('Digite outro valor' ))
+vaSoma = va05+va04+va03+va02+va01
+vaMedia = vaSoma / 5
+print (f'A soma dos valores é de {vaSoma}')
+print(f'A  média aritmética dos valores é de {vaMedia}')
+print('----------------------------------------------')
+print('6. Faça um algoritmo que leia valores para as variáveis a, b e c e mostre o resultado da seguinte expressão: ( a – b ) * c')
+vaA = int(input('Digite um valor '))
+vaB = int(input('Digite outro valor '))
+vaC = int(input('Digite outro valor '))
+resultadoVa = (vaA-vaB)* vaC
+print (f'O resultado da expressão é {resultadoVa}')
+print('----------------------------------------------')
+print('7. Faça um algoritmo que mostre o resultado da expressão abaixo:')
+print('(( x – 5) * y) – z')
+print('Obs: Ler valores para as variáveis x, y e z.')
+vaX= int(input('Digite um valor '))
+vaY = int(input('Digite outro valor '))
+vaZ = int(input('Digite outro valor '))
+resultVa = (((vaX - 5) * vaY) - vaZ)
+print(f'O resultado é de {resultVa}')
+print('----------------------------------------------')
+print('8. Fazer um algoritmo para ler duas notas, os pesos de cada nota e mostrar a média ponderada.')
+print('                               (nota 1 * peso da nota 1) + (nota 2 * peso da nota 2)')
+print('Cálculo da Média Ponderada = ------------------------------------------------------------------------')
+print('                                                    soma dos pesos')
+nota01 = int(input('Digite a primeira nota: '))
+peso01 = int(input('Digite o peso da nota01: '))
+nota02 = int(input('Digite a segundaa nota: '))
+peso02 = int(input('Digite o peso da nota02: '))
+somaPeso = peso01 + peso02
+mediaPon = ((nota01 * peso01) + (nota02 * peso02))/somaPeso
+print(f'A media ponderada é de {mediaPon}')
+print('----------------------------------------------')
+print('9. Escrever um algoritmo para ler uma temperatura em Fahrenheit e apresentá-la convertida em graus Centígrados.')
+print('                           (Fahrenheit – 32) x 5')
+print('Fórmula: Centígrados = ----------------------------')
+print('                                    9')
+temperatura = int(input('Digite a temperatura em F: '))
+centigrados = ((temperatura - 32)*5)/9
+print(f'{temperatura} F é igual a {centigrados:.2f} C')
+print('----------------------------------------------')
+print('10. Maria quer saber quantos litros de gasolina precisa colocar em seu carro e quanto vai gastar para fazer uma viagem até a casa de sua irmã.')
+print('Dados extras:')
+print('- Distância da casa de Maria até sua irmã : 520 km - Seu carro consome 12 Km/litro de combustível.')
+print('- Ela abastece sempre no mesmo posto, onde o preço da gasolina é R$ 4,50 o litro.')
+print('Desenvolva um algoritmo onde o usuário digite a distância, o consumo e o valor do litro de combustível,')
+print('com estes dados o algoritmo deverá calcular a quantidade de litros de combustível para a viagem e o custo da viagem.')
+print('--------------------------------------')
+#distancia 520km
+distancia = float(input('Digite a distancia a ser percorrida em km: '))
+#valor R$ 4,5l
+valor = float(input('Digite o valor do litro de combustível: '))
+#12l/km
+consumo = float(input('Digite o consumo de km por litros: '))
+litrosKm = distancia / consumo
+valorTotal = litrosKm * valor
+print(f'Em sua viagem você utilizará {litrosKm} litros, gastanto um total de {valorTotal:.2f} ')
+
