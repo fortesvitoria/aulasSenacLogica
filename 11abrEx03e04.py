@@ -1,4 +1,4 @@
-print('3) Faça um Programa que leia três números inteiros e mostre o maior deles.')
+print('3 e 4) Faça um Programa que leia três números inteiros e mostre o maiore o menor deles.')
 n1 = int(input('Digite um número: '))
 n2 = int(input('Digite outro número: '))
 n3 = int(input('Digite um terceiro número: '))
