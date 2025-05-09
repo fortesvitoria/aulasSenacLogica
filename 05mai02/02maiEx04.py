@@ -1,0 +1,5 @@
+print('Exercícios com while e do-while')
+print('Faça um programa que receba uma senha formada de quatro números inteiros,')
+print('verifique se a senha está correta e, caso não esteja, solicite novamente a senha. Se a')
+print('senha entrada for a correta, deverá ser apresentada a mensagem “Senha Correta”,')
+print('caso contrário, “Senha Incorreta”.')
