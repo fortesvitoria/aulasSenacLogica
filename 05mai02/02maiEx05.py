@@ -54,14 +54,9 @@ while True:
 
 soma = c1+c2+c3+c4+c5
 
-print(f"Votos em Rodrigues {c1}")
-print(f"Votos em Carlos {c2}")
-print(f"Votos em Neves {c3}")
-print(f"Votos em branco {c4}")
-print(f"Votos em nulo {c5}")
-print(f'A soma dos votos é de {soma}')
-print(f'1 - {(c1/soma)*100}%')
-print(f'2 - {(c2/soma)*100}%')
-print(f'3 - {(c3/soma)*100}%')
-print(f'4 - {(c4/soma)*100}%')
-print(f'5 - {(c5/soma)*100}%')
+print(f"Votos em Rodrigues {c1}, equivalente a {(c1/soma)*100}% dos votos!")
+print(f"Votos em Carlos {c2}, equivalente a {(c2/soma)*100}% dos votos!")
+print(f"Votos em Neves {c3}, equivalente a {(c3/soma)*100}% dos votos!")
+print(f"Votos em branco {c4}, equivalente a {(c4/soma)*100}% dos votos!")
+print(f"Votos em nulo {c5}, equivalente a {(c5/soma)*100}% dos votos!")
+print(f'A soma dos votos é de {soma}!')
