@@ -45,8 +45,9 @@ while True:
     try:
         qtdAluno = int(input('Digite quantos alunos deseja cadastrar: '))
         break
+       #tratamento de erro caso nao entre com um numero inteiro
     except:
-        print('Digite somente NUMEROS!')
+        print('Digite somente NUMEROS INTEIROS!')
 
 #Variavel para calcular imc
 calcIMC = 0
@@ -69,6 +70,7 @@ pesoLista = []
 alturaLista = []
 IMCLista = []
 
+#looping para entrada de dados do aluno de acordo com a quantidade digitada:
 for i in range (qtdAluno):
     #Coletar o nome do aluno.
     nome = input(f'Digite nome do aluno {i + 1}: ')
@@ -89,7 +91,7 @@ for i in range (qtdAluno):
             alturaLista.append(altura)
             IMCLista.append(calcIMC)
 
-            #calcula imc
+            #soma imcs para criar media da turma
             soma += calcIMC
 
             #inicia looping e variaveis para verificar maior e menor
@@ -108,22 +110,23 @@ for i in range (qtdAluno):
                     menor = calcIMC
                     nomeMenor = nome
             break
+        #tratamento de erro caso não seja digitado numeros inteiros ou flutuantes
         except:
             print('Digite somente NUMEROS')
 
 # 3. Ao final do cadastro, o programa deve exibir uma tabela organizada com o nome de
 # cada aluno e seu respectivo IMC.
 print('\nLista de alunos e seus dados:')
-print('-' * 30)
+print('-' * 40)
 for i in range(qtdAluno):
-    print(f'Aluno {i + 1}: {nomeLista[i]}')
+    print('-' * 10, f' ALUNO {i + 1}: {nomeLista[i]}', '-' * 10)
     print(f'Peso: {pesoLista[i]} kg')
     print(f'Altura: {alturaLista[i]} cm')
     print(f'IMC: {IMCLista[i]:.2f}')
-    print('-' * 30)
 
 #4. Após a tabela, o programa deve apresentar um resumo da turma, indicando:
-print('\nResumo da turma: ')
+print('-' * 40)
+print('-' * 10,'Resumo da turma: ','-' * 10, )
 #A média de IMC da turma.
 print(f'A média de IMC da turma é {soma/qtdAluno:.2f} ')
 #O aluno com o maior IMC e seu valor.
