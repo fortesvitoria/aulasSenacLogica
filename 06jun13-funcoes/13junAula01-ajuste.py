@@ -1,12 +1,3 @@
-'''#função sem Parâmetro e sem retorno
-def alo():
-    print('Hello world!')
-'''
-
-# função com parâmetro sem Retorno
-#def bemVindo(nome):
- #   print(f'{nome}, Seja Bem Vinda(o)!')
-
 #função sem parâmetro com retorno
 def menu():
     print('Digite a Opção desejada')
@@ -23,20 +14,19 @@ def menu():
         except:
             print('Digite Números')
     return opcao
-#função com Parâmetros e retorno do cálculo
 
-# para o programa principal
+#função com Parâmetros e retorno do cálculo para o programa principal
 def somar(a,b):
     soma=a + b
     return soma
 
+#inicia programa
 print('Início do Programa')
 nomeUsuario=input('Digite nome da Criatura:')
-#chamda da função com argumento
-# bemVindo(33) pode enviar valor não correspondente
-# CUIDADADO
-#bemVindo(nomeUsuario)
+
+#coloca a opcao do menu dentro da variavel
 opcaoMenu=menu()
+
 print(f'Opção Escolhida foi {opcaoMenu} ')
 if opcaoMenu ==1:
     n1=int(input('Digite um Número:'))
