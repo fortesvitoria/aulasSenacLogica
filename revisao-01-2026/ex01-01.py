@@ -1,8 +1,6 @@
 print('SEQÜÊNCIAS SIMPLES / CONDICIONAL')
 print('1. Ler dois números e imprimir as variáveis na mesma ordem que foram digitadas:')
 
-
-
 print('----------------------------------------------')
 print('2. Escreva um algoritmo que leia dois números que deverão ser colocados, respectivamente nas variáveis vA e vB. ')
 
